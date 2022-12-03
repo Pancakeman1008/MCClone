@@ -8,7 +8,7 @@ CXXFLAGS += -MMD -MP -Iinc -std=c++20
 LDFLAGS +=
 
 game: $(objs)
-	$(CXX) $(LDFLAGS) o $@ $^
+	$(CXX) $(LDFLAGS) -o $@ $^
 
 build/%.o: src/%.cc
 	mkdir -p $(dir $@)
