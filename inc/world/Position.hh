@@ -1,5 +1,7 @@
 #pragma once
 
+// Oh how I wish C++ had a strong typedef...
+
 struct Position;
 struct BlockPosition;
 struct ChunkPosition;
