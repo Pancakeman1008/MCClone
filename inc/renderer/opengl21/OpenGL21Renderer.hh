@@ -9,6 +9,7 @@ class OpenGL21Renderer : public IRenderer {
 public:
     OpenGL21Renderer(Config::Window windowConfig);
 
+    auto pollEvents() -> void override;
     auto shouldExit() -> bool override;
     auto draw() -> void override;
     

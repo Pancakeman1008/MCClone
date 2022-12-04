@@ -7,6 +7,7 @@ class IRenderer {
 public:
     virtual ~IRenderer() = default;
 
+    virtual auto pollEvents() -> void = 0;
     virtual auto shouldExit() -> bool = 0;
     virtual auto draw() -> void = 0;
 
